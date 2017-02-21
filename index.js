@@ -12,6 +12,12 @@ function setText(selector, text) {
 
 function setTextAll(selector, text) {
 	// Write your code here
+	var allSelectors = document.querySelectorAll(selector);
+	// selectorsLength = allSelectors.length;
+	
+	for (i = 0; i < allSelectors.length; i++) {
+    	allSelectors[i].innerHTML = text;
+    }
 }
 
 
