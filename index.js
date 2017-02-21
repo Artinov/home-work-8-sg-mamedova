@@ -5,8 +5,10 @@ function setText(selector, text) {
 	*/
 
 	// Write your code here
-}
+	
+	document.querySelector(selector).innerHTML = text;
 
+}
 
 function setTextAll(selector, text) {
 	// Write your code here
