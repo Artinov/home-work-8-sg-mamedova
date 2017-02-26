@@ -13,11 +13,14 @@ function setText(selector, text) {
 function setTextAll(selector, text) {
 	// Write your code here
 	var allSelectors = document.querySelectorAll(selector);
-	// selectorsLength = allSelectors.length;
 	
-	for (i = 0; i < allSelectors.length; i++) {
-    	allSelectors[i].innerHTML = text;
-    }
+	// for (i = 0; i < allSelectors.length; i++) {
+ //    	allSelectors[i].innerHTML = text;
+ //    }
+
+    allSelectors.forEach(function(element) {
+    	element.innerHTML = text;
+    });
 }
 
 
